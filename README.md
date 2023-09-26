@@ -1,9 +1,8 @@
-# BigMartSales
-Big Mart Sales prediction
+# Big Mart Sales prediction
 
 This repository contains Python code for a sales prediction model using the XGBoost regressor. The model is trained on a dataset containing information about various items and their sales in different outlets.
 
-Table of Contents
+## Table of Contents
 Introduction
 Prerequisites
 Usage
@@ -12,7 +11,8 @@ Model Training
 Evaluation
 Contributing
 License
-Introduction
+
+## Introduction
 Sales prediction is a crucial task for businesses to optimize inventory and resources. This repository provides a basic template for building a sales prediction model using XGBoost. The dataset used here contains information about items, outlets, and their corresponding sales.
 
 Prerequisites
