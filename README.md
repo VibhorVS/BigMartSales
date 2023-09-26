@@ -5,12 +5,9 @@ This repository contains Python code for a sales prediction model using the XGBo
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Usage](#usage)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Training](#model-training)
 - [Evaluation](#evaluation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -22,3 +19,12 @@ Before you begin, ensure you have met the following requirements:
 
 - Python 3.6+
 - Required Python packages: `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `xgboost`
+
+## Data Preprocessing
+
+The dataset (Train.csv) is loaded and preprocessed in the following steps:
+
+- Missing values in the 'Item_Weight' column are filled with the mean value.
+- Missing values in the 'Outlet_Size' column are filled with the mode value based on the 'Outlet_Type'.
+- Data visualization using seaborn to understand the distributions and relationships between features.
+- Encoding categorical variables using LabelEncoder.
