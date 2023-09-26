@@ -43,3 +43,6 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_
 
 ## Model Selection and Training
 The XGBoost regressor is chosen as the model for this task due to its capability to handle regression problems effectively. It is an ensemble learning method that combines the predictions from multiple decision trees.
+
+## Model Evaluation
+To assess the model's performance, it's important to evaluate its predictions on both the training and testing datasets. The evaluation metric used here is the R-squared (R²) value, which measures the proportion of the variance in the dependent variable (sales) that is predictable from the independent variables (features). A higher R² value indicates a better fit.
