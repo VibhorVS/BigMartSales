@@ -39,3 +39,7 @@ Before training the model, the dataset is divided into two subsets: the training
 
 ```python
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=2)
+```
+
+## Model Selection and Training
+The XGBoost regressor is chosen as the model for this task due to its capability to handle regression problems effectively. It is an ensemble learning method that combines the predictions from multiple decision trees.
