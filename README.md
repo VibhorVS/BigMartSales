@@ -28,3 +28,14 @@ The dataset (Train.csv) is loaded and preprocessed in the following steps:
 - Missing values in the 'Outlet_Size' column are filled with the mode value based on the 'Outlet_Type'.
 - Data visualization using seaborn to understand the distributions and relationships between features.
 - Encoding categorical variables using LabelEncoder.
+
+## Model Training
+
+The model for sales prediction is trained using the XGBoost regressor, a powerful machine learning algorithm known for its efficiency in handling structured data and providing accurate predictions.
+
+### Data Splitting
+
+Before training the model, the dataset is divided into two subsets: the training set and the testing set. This is done to evaluate the model's performance on unseen data. The `train_test_split` function from `scikit-learn` is used for this purpose. By default, 80% of the data is used for training, and 20% is reserved for testing. You can adjust the split ratio as needed.
+
+```python
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=2)
